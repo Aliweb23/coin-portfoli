@@ -36,6 +36,17 @@ section {
     margin-bottom: 2rem;
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styling für die Münzgalerie */
 #coin-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -51,16 +62,62 @@ section {
 }
 
 .coin-item img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+/* Slider Styling */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.coin-item {
+    min-width: 100%;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.coin-item img {
+    max-width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }

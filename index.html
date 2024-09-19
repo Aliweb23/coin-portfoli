@@ -26,15 +26,59 @@
 
         <section id="collection">
             <h2>Sammlung</h2>
-            <div id="coin-gallery">
-                <!-- Beispiel für eine Münze in der Galerie -->
-                <div class="coin-item">
-                    <img src="images/coin1.jpg" alt="1€ Münze">
-                    <h3>1€ Münze</h3>
-                    <p>Jahrgang: 2024</p>
-                    <p>Herkunft: Deutschland</p>
+            <!-- Filter-Select -->
+            <label for="filter">Filtere nach Münztyp:</label>
+            <select id="filter">
+                <option value="All">Alle Münzen</option>
+                <option value="1 Cent">1 Cent</option>
+                <option value="2 Cent">2 Cent</option>
+                <option value="5 Cent">5 Cent</option>
+                <option value="10 Cent">10 Cent</option>
+                <option value="20 Cent">20 Cent</option>
+                <option value="50 Cent">50 Cent</option>
+                <option value="1 Euro">1 Euro</option>
+                <option value="2 Euro">2 Euro</option>
+            </select>
+
+            <!-- Slider Container -->
+            <div class="slider-container">
+                <button class="prev">&#10094;</button>
+                <div class="slider">
+                    <!-- Münzen in Reihenfolge von 1 Cent bis 2 Euro -->
+                    <div class="coin-item">
+                        <img src="images/1cent.jpg" alt="1 Cent Münze">
+                        <h3>1 Cent</h3>
+                    </div>
+                    <div class="coin-item">
+                        <img src="images/2cent.jpg" alt="2 Cent Münze">
+                        <h3>2 Cent</h3>
+                    </div>
+                    <div class="coin-item">
+                        <img src="images/5cent.jpg" alt="5 Cent Münze">
+                        <h3>5 Cent</h3>
+                    </div>
+                    <div class="coin-item">
+                        <img src="images/10cent.jpg" alt="10 Cent Münze">
+                        <h3>10 Cent</h3>
+                    </div>
+                    <div class="coin-item">
+                        <img src="images/20cent.jpg" alt="20 Cent Münze">
+                        <h3>20 Cent</h3>
+                    </div>
+                    <div class="coin-item">
+                        <img src="images/50cent.jpg" alt="50 Cent Münze">
+                        <h3>50 Cent</h3>
+                    </div>
+                    <div class="coin-item">
+                        <img src="images/1euro.jpg" alt="1 Euro Münze">
+                        <h3>1 Euro</h3>
+                    </div>
+                    <div class="coin-item">
+                        <img src="images/2euro.jpg" alt="2 Euro Münze">
+                        <h3>2 Euro</h3>
+                    </div>
                 </div>
-                <!-- Weitere Münzen können hier hinzugefügt werden -->
+                <button class="next">&#10095;</button>
             </div>
         </section>
 
