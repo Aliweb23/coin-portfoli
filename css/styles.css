@@ -61,7 +61,7 @@ footer {
 }
 
 .coin-item {
-    border: 1px solid #ccc;
+    border: 1px solid #fff70b;
     border-radius: 8px;
     padding: 1rem;
     width: calc(33% - 2rem);
@@ -109,7 +109,7 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0,0,0,0.5);
-    color: #fff;
+    color: #ed963e;
     border: none;
     padding: 10px;
     cursor: pointer;
